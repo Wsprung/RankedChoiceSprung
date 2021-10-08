@@ -70,7 +70,7 @@ public class RankedChoice {
     //if everything in the rank has equal votes, you do not want all your candidates to be removed
     //so, returning a random String will ensure that nothing in names is removed
     if(occurences == calced.size()) { return "lalalallalalala"; }
-    return loser; //returns the value of the least votes in calced, which may show up multiple times if there is a tie. Will return -1 if all candidates are tied.
+    return loser; //returns the value of the least votes in calced, which may show up multiple times if there is a tie
   }
 
 /**Calculates and returns the winner based off which candidate had the most TOTAL WEIGHTED votes from each rank.
