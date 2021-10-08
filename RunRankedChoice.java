@@ -4,8 +4,8 @@ import java.util.ArrayList;
 public class RunRankedChoice {
   public static void main(String[] args) {
     //testing RankedChoice with ice cream flavor ranked choice vote
-    String[][] numVotesIceCream = {{"peanut butter cup", "cookie dough", "mint chip"}, {"peanut butter cup", "cookie dough", "mint chip"}, {"peanut butter cup", "cookie dough", "mint chip"}, {"cookie dough", "peanut butter cup", "mint chip"}};
-    ArrayList<String> flavors = new ArrayList<>(Arrays.asList("cookie dough", "mint chip", "peanut butter cup"));
+    String[][] numVotesIceCream = {{"chocolate","mint chip", "peanut butter cup", "chocolate"}, {"peanut butter cup", "mint chip", "chocolate", "cookie dough"}, {"peanut butter cup", "cookie dough", "chocolate","mint chip"},{"chocolate", "mint chip", "peanut butter cup","cookie dough"}};
+    ArrayList<String> flavors = new ArrayList<>(Arrays.asList("mint chip", "cookie dough", "peanut butter cup", "chocolate"));
     ArrayList<ArrayList<String>> ballots = new ArrayList<ArrayList<String>>();
 
     //adding the individual ballots to my 2D ArrayList ballots
