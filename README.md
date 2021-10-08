@@ -1,7 +1,7 @@
 # RankedChoiceSprung
 
 Author: Whitney Sprung
-Date last altered: 10.7.2021
+Date last altered: 10.8.2021
 
 Hello!
 
@@ -18,24 +18,24 @@ public int getNumCandidates()
 
 public String calcWinnerBorda()
  *Calculates the winner of your election using Borda Count
-   **The winner is the candidate with the most TOTAL WEIGHTED votes from each rank
-   **A vote in rank one is considered 3 points if you have 3 ranks, rank two would be 2 points, etc...
+   *The winner is the candidate with the most TOTAL WEIGHTED votes from each rank
+   *A vote in rank one is considered 3 points if you have 3 ranks, rank two would be 2 points, etc...
 
 public String calcWinnerInstantRunOff()
  *Calculates the winner of your election using Instant Run Off Count
-   *Looks at rank 1, if there is a candidate with the majority they are the winner
+   *Looks at rank 1, if there is a candidate with the majority (>=50%, no ties) they are the winner
    *If not, if there is a candidate with less votes than the rest, they are removed from all ballots
-	**If two+ candidates are tied for the least amount of votes, they are all removed from all the ballots
-	**If no candidate has the least amount of votes (all tied), the program moves on to the next rank
- *Keeps going until a candidate has the most votes in its rank, and if not, a message indicating a tie is returned
+	*If two+ candidates are tied for the least amount of votes, they are all removed from all the ballots
+	*If no candidate has the least amount of votes (all tied), the program moves on to the next rank
+ *Keeps going until a candidate has the majority votes in its rank, and if not, a message indicating a tie is returned
 
  *****NOTE: This method will alter your passed list of candidates. Use getNumCandidates() to recover your original list of candidates.*****
 
 private int getNumVotes(String candidate, int rank)
  *Helper method
 
-private String mostVotes(int[] calced)
+private String mostVotes(ArrayList<Integer> calced)
  *Helper method
 
-private String leastVotes(int[] calced)
+private String leastVotes(ArrayList<Integer> calced)
  *Helper method
