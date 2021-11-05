@@ -1,7 +1,7 @@
 # RankedChoiceSprung
 
-Author: Whitney Sprung
-Date last altered: 10.8.2021
+* Author: Whitney Sprung
+* Date last altered: 10.8.2021
 
 Hello!
 
